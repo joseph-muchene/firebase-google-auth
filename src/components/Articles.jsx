@@ -9,7 +9,7 @@ function Articles() {
   const fetchArticles = async () => {
     setLoading(true);
     const response = await axios.get(
-      "http://newsapi.org/v2/top-headlines?country=us&apiKey=7dab91ba7b8243708e3893a8f3cce54f"
+      "https://newsapi.org/v2/top-headlines?country=us&apiKey=7dab91ba7b8243708e3893a8f3cce54f"
     );
 
     setArticles(response.data.articles);
